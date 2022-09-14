@@ -1,0 +1,22 @@
+{
+  "name": "quizthis",
+  "version": "1.0.0",
+  "description": "Turn your notes into test and quiz yourself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "QuizThis",
+    "Quiz",
+    "Test"
+  ],
+  "author": "Alisherka7",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1"
+  }
+}
