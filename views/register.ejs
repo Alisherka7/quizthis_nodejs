@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Signin for QuizThis</title>
+    <title>Register for QuizThis</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
 
@@ -19,14 +19,12 @@
   </head>
 
   <body class="text-center">
-    <h1>Login</h1>
-    <% if (messages.error) { %>
-      <%= messages.error %>
-    <% } %>
-    <form class="form-signin" action="/login" method="post">
+    <form class="form-signin" action="/register" method="post">
       <img class="mb-4" src="img/Logo.png" alt="" width="300" height="90">
+      <label for="inputEmail" class="sr-only">User Name</label>
+      <input type="text" id="username" class="form-control" name="username" placeholder="User Name" required autofocus>
       <label for="inputEmail" class="sr-only">Login</label>
-      <input type="login" id="login" class="form-control" name="login" placeholder="Login" required autofocus>
+      <input type="login" id="login" class="form-control" name="login" placeholder="Login" required>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="password" class="form-control" name="password" placeholder="Password" required>
       <div class="checkbox mb-3">
@@ -34,8 +32,8 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <a href="/register">Register</a>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+      <a href="/login">Login</a>
       <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
     </form>
   </body>
